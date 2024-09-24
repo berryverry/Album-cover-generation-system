@@ -1,0 +1,62 @@
+[build]
+  command = "# no build command"
+  functions = "app-main/netlify/functions"
+  publish = "app-main/public"
+  
+[functions]
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/search-page"
+  to = "/search.html"
+  status = 200
+
+[[redirects]]
+  from = "/create-page"
+  to = "/create.html"
+  status = 200
+
+[[redirects]]
+  from = "/search"
+  to = "/.netlify/functions/search"
+  status = 200
+
+[[redirects]]
+  from = "/lyrics"
+  to = "/.netlify/functions/lyrics"
+  status = 200
+
+[[redirects]]
+  from = "/summarize"
+  to = "/.netlify/functions/summarize"
+  status = 200
+
+[[redirects]]
+  from = "/summarize-content"
+  to = "/.netlify/functions/summarize-content"
+  status = 200
+
+[[redirects]]
+  from = "/generate-video"
+  to = "/.netlify/functions/generate-video"
+  status = 200
+
+[[redirects]]
+  from = "/extract-keywords"
+  to = "/.netlify/functions/extract-keywords"
+  status = 200
+
+[[redirects]]
+  from = "/generate-image"
+  to = "/.netlify/functions/generate-image"
+  status = 200
+
+[[redirects]]
+  from = "/summarize-lyrics"
+  to = "/.netlify/functions/summarize-lyrics"
+  status = 200

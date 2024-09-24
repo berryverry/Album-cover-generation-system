@@ -1,0 +1,149 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Arizonia&family=Sedgwick+Ave&family=Marck+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Doodle+Shadow&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/57665d9a1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <header>
+          <div class="logo">
+            <a href="index.html">M '◡'</a>
+          </div>
+          <!-- <div id="songPlayer">
+            <audio id="audioPlayer" controls></audio>
+          </div> -->
+          <nav>
+            <a href="index.html">HOME</a>
+            <div class="active"><a href="#">SEARCH</a></div>
+            <a href="create.html">CREATE</a>
+            <span></span>
+          </nav>
+        </header>
+      </div>
+      <main class="content-area">
+        <div class="contain1">
+          <p>What's your favorite music?</p>
+          <form class="box">
+            <input
+              type="text"
+              id="songSearch"
+              class="form-control"
+              placeholder="Search your favorite..."
+            />
+            <button id="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div id="summarize" class="sum" style="display: none">
+          <div class="two">
+            <button id="summarizebutton">SHORTEN LYRICS</button>
+            <button id="analyzebutton">KEY WORDS &COLORS</button>
+            <button id="generateImage" class="btn-primary">
+              GENERATE COVER
+            </button>
+          </div>
+
+          <div id="summary"></div>
+          <div id="loadingSpinner"></div>
+
+          <div id="content-wrapper">
+            <div id="imageWrapper" class="image-wrapper">
+              <img
+                id="image"
+                src=""
+                alt="Generated Image"
+                style="display: none"
+              />
+              <img id="image" style="display: none" alt="Generated Image" />
+              <div id="overlayText" class="overlay-text">
+                <p id="songTitle" class="title"></p>
+                <br />
+                <p id="artistName" class="artist"></p>
+              </div>
+            </div>
+
+            <div id="controls">
+              <!-- <select id="filterSelect" style="display: none">
+                <option value="none">None</option>
+                <option value="grayscale">Grayscale</option>
+                <option value="brightness">Brightness</option>
+                <option value="contrast">Contrast</option>
+                <option value="blur">Blur</option>
+              </select> -->
+              <div id="filterSelectContainer">
+                <span id="filterSelectLabel" style="display: none"
+                  >SELECT FILTER</span
+                >
+                <ul id="filterSelect">
+                  <li data-value="none">None</li>
+                  <li data-value="grayscale">Grayscale</li>
+                  <li data-value="brightness">Brightness</li>
+                  <li data-value="contrast">Contrast</li>
+                  <li data-value="blur">Blur</li>
+                </ul>
+              </div>
+
+              <a
+                id="shareTwitter"
+                style="display: none; letter-spacing: 1.5px; width: 120px"
+                class="png"
+                target="_blank"
+                ><i class="fab fa-twitter"></i
+              ></a>
+
+              <a
+                id="downloadImage"
+                style="display: none; letter-spacing: 1.5px; width: 120px"
+                class="png"
+                ><i class="fas fa-download"></i>
+              </a>
+              <br />
+            </div>
+          </div>
+        </div>
+
+        <div id="lyrics" class="single-lyrics"></div>
+        <div id="noResults" style="display: none"></div>
+        <div id="searchResult" class="search-result-col" style="display: none">
+          <div class="single-result-row">
+            <div class="col">
+              <h3 id="lyricsName" class="lyrics-name"></h3>
+              <p class="author lead"><span id="albumName"></span></p>
+            </div>
+            <div class="col2">
+              <button id="lyricsSearch" class="btn-success">
+                <a href="#"></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>© 2024 MINI. All rights reserved.</p>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+  <!--Script-->
+</html>
