@@ -1,4 +1,4 @@
-# 🖼 MINI: Music IN Image
+# 🖼 MINI: Music IN Image (Graduation Project)
 
 ## 📌 Overview
 
