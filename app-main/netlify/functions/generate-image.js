@@ -1,4 +1,4 @@
-import fetch from "node-fetch"; // Ensure you have node-fetch installed
+import fetch from "node-fetch";
 import "dotenv/config";
 
 const API_KEY = process.env.API_KEY;
@@ -15,8 +15,7 @@ export async function handler(event) {
 
   try {
     const response = await fetch(
-      "https://api-inference.huggingface.co/models/alvdansen/littletinies",
-      // "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2",
+      "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0",
       {
         headers: {
           Authorization: `Bearer ${API_KEY}`,
@@ -28,7 +27,7 @@ export async function handler(event) {
           negative_prompt: "text only",
           positive_prompt: "album cover",
           options: {
-            steps: 30, // 스텝 수를 조정하여 속도 개선 가능
+            steps: 30,
           },
         }),
       }
@@ -45,7 +44,7 @@ export async function handler(event) {
     return {
       statusCode: 200,
       headers: {
-        "Content-Type": "image/png", // Adjust based on actual image format
+        "Content-Type": "image/png",
       },
       body: Buffer.from(result).toString("base64"),
       isBase64Encoded: true,
