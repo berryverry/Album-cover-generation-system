@@ -35,7 +35,7 @@ export async function handler(event) {
 
     scores.sort((a, b) => b.score - a.score);
     const topChunks = scores
-      .slice(0, 10) // Adjust the number of chunks if needed
+      .slice(0, 10)
       .map((item) => item.chunk)
       .join(" ");
 
