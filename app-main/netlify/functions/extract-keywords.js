@@ -25,7 +25,7 @@ export async function handler(event) {
       },
     ]);
 
-    const keywords = result.response.text().split("\n").slice(0, 3); // Adjust parsing if needed
+    const keywords = result.response.text().split("\n").slice(0, 3);
     return {
       statusCode: 200,
       body: JSON.stringify({ keywords }),
