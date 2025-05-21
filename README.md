@@ -15,15 +15,15 @@ MINI allows users to create high-quality covers based on lyrics, even without ar
 </p>
 
 <p align="center">
-<img src="./images/summarize-lyrics.png" alt="Summarize" width="332" height="500"/>
-<img src="./images/analyze-lyrics.png" alt="Analyze" width="332" height="500"/>
-  <img src="./images/generate-image1.png" alt="Generate1" width="332" height="500"/>
+<img src="./images/summarize-lyrics.png" alt="Summarize" width="30%" height="500"/>
+<img src="./images/analyze-lyrics.png" alt="Analyze" width="30%" height="500"/>
+<img src="./images/generate-image1.png" alt="Generate1" width="30%" height="500"/>
 </p>
 
 <p align="center">
-<img src="./images/generate-image2.png" alt="Generate2" width="332" height="500"/>
-<img src="./images/filter.png" alt="Filter" width="332" height="500"/>
-<img src="./images/create-image.png" alt="Create" width="332" height="500"/>
+<img src="./images/generate-image2.png" alt="Generate2" width="30%" height="500"/>
+<img src="./images/filter.png" alt="Filter" width="30%" height="500"/>
+<img src="./images/create-image.png" alt="Create" width="30%" height="500"/>
 </p>
 
 <br>
