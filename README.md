@@ -11,7 +11,7 @@ MINI allows users to create high-quality covers based on lyrics, even without ar
 <img src="./images/home.png" alt="Home" width="1080"/>
 
 <p align="center">
-<img src="./images/search.png" alt="Search" width="502"/> <img src="./images/lyrics.png" alt="Lyrics" width="502"/>
+<img src="./images/search.png" alt="Search" width="480"/> <img src="./images/lyrics.png" alt="Lyrics" width="480"/>
 </p>
 
 <p align="center">
