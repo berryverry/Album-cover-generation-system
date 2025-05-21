@@ -5,7 +5,28 @@
 **MINI (Music IN Image)** is a Generative AI-based service that automatically creates **album covers from song lyrics**.  
 As music streaming platforms grow rapidly, album art has become a key marketing element.  
 MINI allows users to create high-quality covers based on lyrics, even without artistic or design expertise.
-<br><br>
+
+<br>
+
+<img src="./images/home.png" alt="Home" width="1080"/>
+
+<p align="center">
+<img src="./images/search.png" alt="Search" width="502"/> <img src="./images/lyrics.png" alt="Lyrics" width="502"/>
+</p>
+
+<p align="center">
+<img src="./images/summarize-lyrics.png" alt="Summarize" width="332" height="500"/>
+<img src="./images/analyze-lyrics.png" alt="Analyze" width="332" height="500"/>
+  <img src="./images/generate-image1.png" alt="Generate1" width="332" height="500"/>
+</p>
+
+<p align="center">
+<img src="./images/generate-image2.png" alt="Generate2" width="332" height="500"/>
+<img src="./images/filter.png" alt="Filter" width="332" height="500"/>
+<img src="./images/create-image.png" alt="Create" width="332" height="500"/>
+</p>
+
+<br>
 
 ## 🎯 Motivation
 
